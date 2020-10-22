@@ -19,7 +19,7 @@ h2{
     color:hsl(0, 0%, 0%);
 }
 .container{
-    width:90%;
+    width:89%;
     margin:0 auto;
     
 }
@@ -38,13 +38,13 @@ h2{
 
 }
 .line-colored{
-    width:85%;
+    width:100%;
     height:1px;
     background-color:hsl(228, 10%, 51%);
     margin-bottom: 0.5em;
 }
 .slider-content{
-    width:85%;
+    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,7 +118,7 @@ h2{
       align-items: center;
   }
   .review-content{
-      width:90%;
+      width:100%;
       background-color:hsl(227, 47%, 96%);
       border-radius: 10px;
       text-align: center;
@@ -177,7 +177,7 @@ h2{
 }
 .overview-content
 {
-  width:90%;
+  width: 100%;
   background-color:hsl(227, 47%, 96%);
   border-radius: 10px;
   color:hsl(230, 10%, 46%);
@@ -219,7 +219,7 @@ h2{
 @media (min-width:700px) and (max-width:1199px)
 {
   .container{
-    width:55%;
+    width:50%;
   }
 }
 

@@ -1,0 +1,250 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+   background-color: hsl(0, 0%, 100%);
+   font-weight: 700;
+
+}
+h1{
+  font-size:1.7rem;
+}
+h2{
+    
+    margin:0 auto;
+    color:hsl(0, 0%, 0%);
+}
+.container{
+    width:90%;
+    margin:0 auto;
+    
+}
+.Dashboard-sec
+{
+    color :hsl(230, 10%, 46%);
+    padding-top:1em;
+}
+.social-head{
+    color: hsl(230, 17%, 14%);
+    margin-bottom: 0;
+    
+}
+.social-content p{
+    margin-top: 0.4em;
+
+}
+.line-colored{
+    width:85%;
+    height:1px;
+    background-color:hsl(228, 10%, 51%);
+    margin-bottom: 0.5em;
+}
+.slider-content{
+    width:85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width:60px;
+    height: 30px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:hsl(229, 17%, 82%) ;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before ,.slider.minus:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 3px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before{
+    background-color: white;
+  }
+   .slider.dark:before{
+    background-color:hsl(232, 19%, 15%);
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:hover{
+    opacity: 0.5;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .review-board{
+      padding-top: 2em;
+      text-align: center;
+
+  }
+ 
+  .row-2{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .review-content{
+      width:90%;
+      background-color:hsl(227, 47%, 96%);
+      border-radius: 10px;
+      text-align: center;
+      padding: 1.3em 0;
+  }
+  .review-content:hover ,.overview-content:hover{
+    cursor: pointer;
+  }
+  .spaced{
+    margin-top: 1em;
+  }
+  .blue-colored{
+    border-top: 5px solid hsl(210, 78%, 56%);
+  }
+ 
+  .insta-colored{
+    border-top: 5px solid ;
+    border-image-source:linear-gradient(to right,hsl(37, 97%, 70%),hsl(329, 70%, 58%))  ;
+    border-image-slice: 1;
+  }
+ 
+  .yt-colored{
+    border-top: 5px solid hsl(348, 97%, 39%);
+
+  }
+  .social-details h2{
+    font-size: 3.5rem;
+  }
+  .social-names ,.social-rate {
+    margin:0 auto;
+}
+.social-names
+{
+    width:43%;
+    font-size: 0.8rem;
+}
+
+.follow{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    margin-top: 0;
+}
+.social-rate{
+    width:37%;
+}
+.high-rate
+{
+    color:hsl(146, 68%, 55%);
+}
+.down-rate{
+  color:hsl(348, 97%, 39%);
+}
+.overview-sec{
+  padding:2.5em 0;
+}
+.overview-content
+{
+  width:90%;
+  background-color:hsl(227, 47%, 96%);
+  border-radius: 10px;
+  color:hsl(230, 10%, 46%);
+  padding:1.5em 0;
+}
+.rrow{
+  display:flex;
+  align-items: center;
+  }
+.head-over
+{
+  color:hsl(230, 10%, 46%);
+  margin-bottom: 1em;
+}
+
+.details-over
+{
+  width:90%;
+  font-size: 0.8rem;
+}
+.coll{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+.details-over h2{
+  font-size: 2rem;
+}
+.social-img
+{
+  margin-top: 1.8em;
+}
+.details-over .social-rate
+{
+  width:20%;
+}
+@media (min-width:700px) and (max-width:1199px)
+{
+  .container{
+    width:55%;
+  }
+}
+
+@media (min-width:1200px)
+{
+
+   .row{
+     display:flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     row-gap: 20px;
+    }
+   .line-colored{
+      display:none;
+    }
+  .slider-content{
+    width:13%;
+  }
+  .review-content,.overview-content
+  {
+    width:22%;
+  }
+  .spaced{
+    margin-top: 0;
+}
+
+  
+}
